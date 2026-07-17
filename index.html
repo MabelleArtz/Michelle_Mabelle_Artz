@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,301 +5,405 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ma Belle Artz | Jeanu-Michelle</title>
+<title>Ma Belle Artz | Contemporary Artist</title>
+
+<meta name="description" content="Ma Belle Artz — contemporary artwork exploring femininity, vulnerability, strength and emotional storytelling.">
 
 <style>
 
-/* ---------- GLOBAL ---------- */
-
-body{
-font-family: Georgia, 'Times New Roman', serif;
-margin:0;
-background:#0f0f10;
-color:#eaeaea;
-line-height:1.6;
+:root {
+    --background:#0b0b0d;
+    --surface:#15151a;
+    --text:#f4efe8;
+    --muted:#b8afa4;
+    --gold:#c9a86a;
 }
 
-section{
-max-width:1000px;
-margin:auto;
-padding:60px 20px;
+* {
+    box-sizing:border-box;
 }
 
-h2{
-font-weight:normal;
-margin-bottom:25px;
+body {
+    margin:0;
+    background:var(--background);
+    color:var(--text);
+    font-family:Georgia, "Times New Roman", serif;
+    line-height:1.7;
 }
 
-p{
-margin:12px 0;
+
+header {
+    text-align:center;
+    padding:100px 20px;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.9)
+    ),
+    #111;
 }
 
-/* ---------- HEADER ---------- */
 
-header{
-text-align:center;
-padding:80px 20px;
-background:#151517;
+header h1 {
+    font-size:clamp(3rem,7vw,5rem);
+    letter-spacing:.15em;
+    margin:0;
 }
 
-header h1{
-font-size:42px;
-margin-bottom:10px;
+
+header p {
+    color:var(--gold);
+    font-size:1.2rem;
+    letter-spacing:.1em;
 }
 
-header p{
-color:#d6b3ff;
-font-size:18px;
+
+section {
+    max-width:1100px;
+    margin:auto;
+    padding:70px 25px;
 }
 
-/* ---------- HERO IMAGE ---------- */
 
-#hero{
-display:flex;
-justify-content:center;
-padding:60px 20px;
-background:#151517;
+h2 {
+    font-size:2.2rem;
+    font-weight:400;
+    border-bottom:1px solid #333;
+    padding-bottom:15px;
 }
 
-#hero img{
-width:100%;
-max-width:450px;
-border-radius:10px;
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
+
+h3 {
+    color:var(--gold);
+    font-weight:normal;
 }
 
-/* ---------- WORK SECTIONS ---------- */
 
-.work{
-background:#18181b;
-border-radius:10px;
-padding:25px;
-margin-top:30px;
+.hero {
+    text-align:center;
 }
 
-.work-gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-margin-top:15px;
+
+.hero img {
+    width:90%;
+    max-width:450px;
+    filter:drop-shadow(0 20px 40px #000);
 }
 
-.work-gallery img{
-width:100%;
-border-radius:6px;
-transition:transform .3s ease;
+
+
+.card {
+
+    background:var(--surface);
+    padding:30px;
+    margin:35px 0;
+    border-radius:18px;
+
 }
 
-.work-gallery img:hover{
-transform:scale(1.05);
+
+
+.gallery {
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
 }
 
-/* ---------- PORTFOLIO GRID ---------- */
 
-#portfolio{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+
+.gallery img {
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:12px;
+
+    transition:.3s ease;
+
 }
 
-#portfolio img{
-width:100%;
-border-radius:8px;
-transition:transform .3s ease;
+
+
+.gallery img:hover {
+
+    transform:scale(1.04);
+
 }
 
-#portfolio img:hover{
-transform:scale(1.05);
+
+
+.quote {
+
+    font-style:italic;
+    color:var(--muted);
+    font-size:1.2rem;
+
 }
 
-/* ---------- PERSONAL PHOTOS ---------- */
 
-#personal{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
+
+.button {
+
+    display:inline-block;
+    background:var(--gold);
+    color:#111;
+
+    padding:14px 30px;
+    border-radius:40px;
+
+    text-decoration:none;
+
 }
 
-#personal img{
-width:150px;
-height:150px;
-object-fit:cover;
-border-radius:50%;
+
+
+a {
+
+    color:var(--gold);
+
 }
 
-/* ---------- LOGOS ---------- */
 
-#logos{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:30px;
+
+footer {
+
+    background:#050505;
+    padding:40px;
+    text-align:center;
+    color:var(--muted);
+
 }
 
-#logos img{
-height:70px;
-}
-
-/* ---------- FOOTER ---------- */
-
-footer{
-background:#151517;
-padding:30px;
-text-align:center;
-margin-top:50px;
-}
-
-a{
-color:#d6b3ff;
-text-decoration:none;
-}
 
 </style>
+
 </head>
+
 
 <body>
 
+
 <header>
+
 <h1>Ma Belle Artz</h1>
-<p>Jeanu-Michelle | Artist Portfolio</p>
+
+<p>
+Emotion • Story • Transformation
+</p>
+
 </header>
 
-<section id="hero">
-<img src="Art/logo/mabelle2.png" alt="Ma Belle Artz Logo">
-</section>
 
-<section>
 
-<h2>Who I Am</h2>
+<section class="hero">
 
-<p>Art has become a part of my everyday life. It is difficult to go about my day without seeing wonder around me.</p>
-
-<p>I have been creating art for the better part of ten years.</p>
-
-<p>I do not limit myself to one medium or genre. I create to explore the endless possibilities of what a piece of art can become.</p>
-
-<img src="Art/me/me2.jpeg" style="max-width:300px;border-radius:10px;margin-top:20px;" alt="Artist photo">
+<img 
+src="Art/logo/mabelle2.png"
+alt="Ma Belle Artz logo">
 
 </section>
 
+
+
+
 <section>
 
-<h2>My Background</h2>
+<h2>The Vision</h2>
 
-<p>I am a South African artist based in Hermanus. My work often explores the quiet tension between vulnerability and strength.</p>
 
-<p>I work primarily with traditional mediums, creating pieces that linger in emotional spaces. Femininity, perception, and inner conflict frequently weave through my work.</p>
+<p>
+Ma Belle Artz is a contemporary artistic identity exploring the delicate space between vulnerability and strength.
+</p>
 
-<p>Rather than strict realism, I am drawn to atmosphere and mood. I often explore the idea of intentional imperfection — a personal journey away from perfection and toward growth.</p>
+
+<p>
+Each creation is an emotional conversation — a reflection of perception, femininity, conflict, beauty and transformation.
+</p>
+
+
+<p class="quote">
+"Art is not created to be perfect. It is created to be felt."
+</p>
+
 
 </section>
 
+
+
+
+
+
 <section>
 
-<h2>Selected Works</h2>
 
-<div class="work">
+<h2>Featured Collections</h2>
+
+
+
+<div class="card">
+
 
 <h3>Story of Her</h3>
 
-<p>This series explores feminine presence and autonomy. The woman exists fully within her own power — not needing a man, yet choosing to welcome him.</p>
 
-<p>In the final piece he approaches her, looking upward in awe. The colour contrast against earlier monochrome works reflects his passion and desire.</p>
+<p>
+A visual exploration of feminine presence, autonomy and the power of choosing love without losing oneself.
+</p>
 
-<div class="work-gallery">
 
-<img src="Art/art_pieces/part1.jpeg" alt="Part 1">
-<img src="Art/art_pieces/part2.jpeg" alt="Part 2">
-<img src="Art/art_pieces/part3.jpeg" alt="Part 3">
-<img src="Art/art_pieces/final.jpeg" alt="Final Piece">
-<img src="Art/art_pieces/his_pov.jpeg" alt="His POV">
+
+<div class="gallery">
+
+
+<img src="Art/art_pieces/part1.jpeg">
+
+<img src="Art/art_pieces/part2.jpeg">
+
+<img src="Art/art_pieces/part3.jpeg">
+
+<img src="Art/art_pieces/final.jpeg">
+
+<img src="Art/art_pieces/his_pov.jpeg">
+
 
 </div>
 
+
 </div>
 
-<div class="work">
+
+
+
+
+
+
+<div class="card">
+
 
 <h3>Animal Cruelty Series</h3>
 
-<p>This series depicts sea animals rendered in graphite and intentionally left colourless, symbolising their fading presence as endangered creatures.</p>
 
-<p>Red elements represent each life lost at the hands of humanity.</p>
+<p>
+A graphite collection portraying endangered ocean life. The absence of colour represents fading existence, while red elements symbolise loss caused by humanity.
+</p>
 
-<div class="work-gallery">
+
+
+<div class="gallery">
+
 
 <img src="Art/art_pieces/octopus_vctim.png">
+
 <img src="Art/art_pieces/shell_schocked.png">
+
 <img src="Art/art_pieces/whales_wrath.png">
+
 <img src="Art/art_pieces/dolphins_despair.png">
 
-</div>
 
 </div>
 
-<div class="work">
 
-<h3>Beauty in Death – Mixed Media</h3>
+</div>
 
-<p>Created at the end of my high school years during a period of experimentation and personal loss.</p>
 
-<p>Sharp glass fragments symbolise the harsh reality of grief, while flowers represent the fragile fantasy of holding on to what we have lost.</p>
 
-<div class="work-gallery">
+
+
+
+<div class="card">
+
+
+<h3>Mixed Media Works</h3>
+
+
+<div class="gallery">
+
 
 <img src="Art/art_pieces/beauty_in_death.png">
 
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Art & Creations</h2>
-
-<div id="portfolio">
-
 <img src="Art/art_pieces/breaking_reality_2.png">
+
 <img src="Art/art_pieces/lion_gaze.png">
 
+
 </div>
 
+
+</div>
+
+
+
 </section>
+
+
+
+
+
 
 <section>
 
-<h2>What I Do</h2>
 
-<p>My work is exploratory in nature. Each piece evolves through emotion, instinct, and atmosphere.</p>
+<h2>Commissions & Prints</h2>
 
-<p>The medium shifts depending on the mood of the work, allowing the piece itself to guide the process and the form it ultimately takes.</p>
+
+<p>
+Original commissions and curated print collections are becoming available through Ma Belle Artz.
+</p>
+
+
+<a class="button"
+href="mailto:mabelle03reve@gmail.com">
+
+Request Commission
+
+</a>
+
 
 </section>
+
+
+
+
+
 
 <section>
 
-<h2>Contact</h2>
 
-<p>Email: <a href="mailto:mabelle03reve@gmail.com">mabelle03reve@gmail.com</a></p>
+<h2>Follow The Journey</h2>
 
-<p>Phone: +27 62 300 3812</p>
 
-<p>Instagram: <a href="https://instagram.com/michelle_mabelle_artz">@michelle_mabelle_artz</a></p>
+<p>
 
-<p>The artwork shown here represents a portion of my collection. For more pieces please visit my social media.</p>
+Instagram:
+
+<a href="https://instagram.com/michelle_mabelle_artz">
+
+@michelle_mabelle_artz
+
+</a>
+
+
+</p>
+
 
 </section>
+
+
+
 
 <footer>
 
-<p>© 2026 Ma Belle Artz</p>
+© 2026 Ma Belle Artz
 
 </footer>
 
-</body>
-</html>
-```
 
+
+</body>
+
+</html>
