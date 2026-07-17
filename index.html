@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,177 +8,252 @@
 
 <title>Ma Belle Artz | Contemporary Artist</title>
 
-<meta name="description" content="Ma Belle Artz — contemporary artwork exploring femininity, vulnerability, strength and emotional storytelling.">
+<meta name="description" content="Ma Belle Artz - Contemporary artwork exploring emotion, femininity, vulnerability and transformation.">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 
 <style>
 
+
 :root {
-    --background:#0b0b0d;
-    --surface:#15151a;
-    --text:#f4efe8;
-    --muted:#b8afa4;
-    --gold:#c9a86a;
+
+--black:#0b0b0c;
+--ivory:#f8f5ef;
+--gold:#c6a15b;
+--marble:#e8e4dc;
+--grey:#555;
+
 }
+
 
 * {
-    box-sizing:border-box;
+
+box-sizing:border-box;
+scroll-behavior:smooth;
+
 }
+
+
 
 body {
-    margin:0;
-    background:var(--background);
-    color:var(--text);
-    font-family:Georgia, "Times New Roman", serif;
-    line-height:1.7;
-}
 
+margin:0;
 
-header {
-    text-align:center;
-    padding:100px 20px;
-    background:
-    linear-gradient(
-        rgba(0,0,0,.6),
-        rgba(0,0,0,.9)
-    ),
-    #111;
-}
+background:
 
+linear-gradient(
+135deg,
+#ffffff 0%,
+#e8e4dc 40%,
+#ffffff 70%
+);
 
-header h1 {
-    font-size:clamp(3rem,7vw,5rem);
-    letter-spacing:.15em;
-    margin:0;
-}
+color:var(--black);
 
-
-header p {
-    color:var(--gold);
-    font-size:1.2rem;
-    letter-spacing:.1em;
-}
-
-
-section {
-    max-width:1100px;
-    margin:auto;
-    padding:70px 25px;
-}
-
-
-h2 {
-    font-size:2.2rem;
-    font-weight:400;
-    border-bottom:1px solid #333;
-    padding-bottom:15px;
-}
-
-
-h3 {
-    color:var(--gold);
-    font-weight:normal;
-}
-
-
-.hero {
-    text-align:center;
-}
-
-
-.hero img {
-    width:90%;
-    max-width:450px;
-    filter:drop-shadow(0 20px 40px #000);
-}
-
-
-
-.card {
-
-    background:var(--surface);
-    padding:30px;
-    margin:35px 0;
-    border-radius:18px;
+font-family:'Montserrat', sans-serif;
 
 }
 
 
+h1,h2,h3 {
 
-.gallery {
-
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:20px;
+font-family:'Cormorant Garamond', serif;
 
 }
 
 
+p {
 
-.gallery img {
-
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    border-radius:12px;
-
-    transition:.3s ease;
+line-height:1.8;
 
 }
-
-
-
-.gallery img:hover {
-
-    transform:scale(1.04);
-
-}
-
-
-
-.quote {
-
-    font-style:italic;
-    color:var(--muted);
-    font-size:1.2rem;
-
-}
-
-
-
-.button {
-
-    display:inline-block;
-    background:var(--gold);
-    color:#111;
-
-    padding:14px 30px;
-    border-radius:40px;
-
-    text-decoration:none;
-
-}
-
 
 
 a {
 
-    color:var(--gold);
+text-decoration:none;
+
+color:inherit;
+
+}
+
+
+/* NAVIGATION */
+
+
+nav {
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:
+
+rgba(255,255,255,.85);
+
+backdrop-filter:blur(10px);
+
+border-bottom:1px solid rgba(198,161,91,.4);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 40px;
 
 }
 
 
 
-footer {
+.logo {
 
-    background:#050505;
-    padding:40px;
-    text-align:center;
-    color:var(--muted);
+font-family:'Cormorant Garamond';
+
+font-size:2rem;
+
+letter-spacing:.15em;
 
 }
 
+
+
+nav ul {
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
+margin:0;
+
+}
+
+
+
+nav a:hover {
+
+color:var(--gold);
+
+}
+
+
+
+/* HERO */
+
+
+.hero {
+
+min-height:90vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:50px 20px;
+
+}
+
+
+
+.hero h1 {
+
+font-size:clamp(4rem,8vw,7rem);
+
+margin:0;
+
+letter-spacing:.12em;
+
+}
+
+
+
+.hero p {
+
+font-size:1.3rem;
+
+color:#555;
+
+}
+
+
+
+.hero img {
+
+width:min(450px,80%);
+
+margin-top:40px;
+
+filter:
+
+drop-shadow(0 30px 40px rgba(0,0,0,.25));
+
+}
+
+
+
+/* GENERAL */
+
+
+section {
+
+max-width:1200px;
+
+margin:auto;
+
+padding:80px 30px;
+
+}
+
+
+
+.section-title {
+
+font-size:3rem;
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+
+
+.gold-line {
+
+width:80px;
+
+height:2px;
+
+background:var(--gold);
+
+margin:20px auto;
+
+}
+
+.gold-line {
+
+width:80px;
+
+height:2px;
+
+background:var(--gold);
+
+margin:20px auto;
+
+}
 
 </style>
 
@@ -187,47 +263,52 @@ footer {
 <body>
 
 
-<header>
+<nav>
 
-<h1>Ma Belle Artz</h1>
+<div class="logo">
+Ma Belle Artz
+</div>
+
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#commissions">Commissions</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+
+<section class="hero" id="home">
+
+
+<h1>
+Ma Belle Artz
+</h1>
+
+
+<div class="gold-line"></div>
+
 
 <p>
-Emotion • Story • Transformation
+Where emotion becomes art.
 </p>
 
-</header>
-
-
-
-<section class="hero">
 
 <img 
 src="Art/logo/mabelle2.png"
-alt="Ma Belle Artz logo">
-
-</section>
-
-
-
-
-<section>
-
-<h2>The Vision</h2>
-
-
-<p>
-Ma Belle Artz is a contemporary artistic identity exploring the delicate space between vulnerability and strength.
-</p>
-
-
-<p>
-Each creation is an emotional conversation — a reflection of perception, femininity, conflict, beauty and transformation.
-</p>
-
-
-<p class="quote">
-"Art is not created to be perfect. It is created to be felt."
-</p>
+alt="Ma Belle Artz Logo">
 
 
 </section>
@@ -237,133 +318,516 @@ Each creation is an emotional conversation — a reflection of perception, femin
 
 
 
-<section>
+<section id="about">
 
 
-<h2>Featured Collections</h2>
+<h2 class="section-title">
+The Artist Behind The Work
+</h2>
 
 
+<div class="gold-line"></div>
 
-<div class="card">
-
-
-<h3>Story of Her</h3>
 
 
 <p>
-A visual exploration of feminine presence, autonomy and the power of choosing love without losing oneself.
+Ma Belle Artz explores the fragile balance between vulnerability and strength.
+Each piece becomes a conversation between emotion, identity, perception and transformation.
 </p>
-
-
-
-<div class="gallery">
-
-
-<img src="Art/art_pieces/part1.jpeg">
-
-<img src="Art/art_pieces/part2.jpeg">
-
-<img src="Art/art_pieces/part3.jpeg">
-
-<img src="Art/art_pieces/final.jpeg">
-
-<img src="Art/art_pieces/his_pov.jpeg">
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="card">
-
-
-<h3>Animal Cruelty Series</h3>
 
 
 <p>
-A graphite collection portraying endangered ocean life. The absence of colour represents fading existence, while red elements symbolise loss caused by humanity.
+Through different mediums and artistic styles, the work seeks to capture moments that exist between reality and imagination — where imperfection becomes part of the beauty.
 </p>
 
 
+</section>
+
+
+<section id="gallery">
+
+
+<h2 class="section-title">
+Artwork Collection
+</h2>
+
+<div class="gold-line"></div>
 
 <div class="gallery">
 
 
-<img src="Art/art_pieces/octopus_vctim.png">
-
-<img src="Art/art_pieces/shell_schocked.png">
-
-<img src="Art/art_pieces/whales_wrath.png">
-
-<img src="Art/art_pieces/dolphins_despair.png">
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-
-<h3>Mixed Media Works</h3>
-
-
-<div class="gallery">
-
+<div class="art-card">
 
 <img src="Art/art_pieces/beauty_in_death.png">
 
+
+<div class="art-info">
+
+
+<h3>
+Beauty In Death
+</h3>
+
+
+<p>
+Mixed Media
+</p>
+
+
+<p>
+A reflection on grief, memory and the delicate beauty found within loss.
+</p>
+
+
+<details>
+
+<summary>
+View Story
+</summary>
+
+
+<p>
+Created during a period of personal reflection, this piece explores the contrast between pain and beauty. Glass represents the sharp edges of grief, while flowers represent the fragile moments we try to preserve.
+</p>
+
+
+</details>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="art-card">
+
+
 <img src="Art/art_pieces/breaking_reality_2.png">
+
+
+<div class="art-info">
+
+
+<h3>
+Breaking Reality
+</h3>
+
+
+<p>
+Digital Artwork
+</p>
+
+
+<p>
+Exploring perception, identity and the spaces between what we see and what we feel.
+</p>
+
+
+<details>
+
+<summary>
+View Story
+</summary>
+
+
+<p>
+A visual exploration of breaking away from expectations and embracing transformation.
+</p>
+
+
+</details>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="art-card">
+
 
 <img src="Art/art_pieces/lion_gaze.png">
 
 
-</div>
+<div class="art-info">
+
+
+<h3>
+Lion's Gaze
+</h3>
+
+
+<p>
+Traditional Artwork
+</p>
+
+
+<p>
+A study of strength, presence and quiet observation.
+</p>
+
+
+<details>
+
+<summary>
+View Story
+</summary>
+
+
+<p>
+This piece represents the power of stillness — the strength that exists without needing to roar.
+</p>
+
+
+</details>
 
 
 </div>
 
+
+</div>
+
+
+
+
+
+</div>
 
 
 </section>
 
+<style>
+
+
+/* GALLERY */
+
+
+.gallery {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:40px;
+
+}
+
+
+
+.art-card {
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.15);
+
+transition:.4s ease;
+
+border:1px solid rgba(198,161,91,.3);
+
+}
+
+
+
+.art-card:hover {
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 30px 70px rgba(0,0,0,.25);
+
+}
+
+
+
+.art-card img {
+
+width:100%;
+
+height:420px;
+
+object-fit:cover;
+
+}
+
+
+
+.art-info {
+
+padding:30px;
+
+}
+
+
+
+.art-info h3 {
+
+font-size:2rem;
+
+margin-top:0;
+
+}
+
+
+
+.art-info p:first-of-type {
+
+color:var(--gold);
+
+font-weight:500;
+
+}
+
+
+
+details {
+
+margin-top:20px;
+
+border-top:1px solid #ddd;
+
+padding-top:15px;
+
+}
+
+
+
+summary {
+
+cursor:pointer;
+
+color:var(--gold);
+
+font-weight:600;
+
+}
 
 
 
 
 
-<section>
+/* COMMISSIONS */
 
 
-<h2>Commissions & Prints</h2>
+.commission-box {
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#ffffff,
+
+#e8e4dc
+
+);
+
+
+padding:50px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.12);
+
+}
+
+
+
+.button {
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:15px 40px;
+
+background:var(--gold);
+
+color:white;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+
+
+.button:hover {
+
+background:#a9833d;
+
+}
+
+
+
+
+
+/* CONTACT */
+
+
+.contact {
+
+text-align:center;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+
+background:#0b0b0c;
+
+color:white;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+
+
+footer span {
+
+color:var(--gold);
+
+}
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:800px){
+
+
+nav {
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+
+nav ul {
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+padding:0;
+
+}
+
+
+
+.hero h1 {
+
+font-size:3rem;
+
+}
+
+
+
+section {
+
+padding:50px 20px;
+
+}
+
+
+
+.art-card img {
+
+height:300px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+
+
+
+<section id="commissions">
+
+
+<h2 class="section-title">
+Commissions
+</h2>
+
+
+<div class="gold-line"></div>
+
+
+
+<div class="commission-box">
 
 
 <p>
-Original commissions and curated print collections are becoming available through Ma Belle Artz.
+Interested in a custom piece created specifically for you?
 </p>
 
 
-<a class="button"
-href="mailto:mabelle03reve@gmail.com">
+<p>
+Ma Belle Artz offers personalised digital artwork commissions, character artwork and creative collaborations.
+</p>
 
-Request Commission
+
+
+<a 
+class="button"
+href="mailto:Mabelle_Artz@outlook.com">
+
+Request A Commission
 
 </a>
 
 
+
+</div>
+
+
 </section>
 
 
@@ -371,10 +835,23 @@ Request Commission
 
 
 
-<section>
+<section id="contact" class="contact">
 
 
-<h2>Follow The Journey</h2>
+<h2 class="section-title">
+Contact
+</h2>
+
+
+<div class="gold-line"></div>
+
+
+<p>
+Email:
+<a href="mailto:Mabelle_Artz@outlook.com">
+Mabelle_Artz@outlook.com
+</a>
+</p>
 
 
 <p>
@@ -387,7 +864,6 @@ Instagram:
 
 </a>
 
-
 </p>
 
 
@@ -396,9 +872,16 @@ Instagram:
 
 
 
+
+
 <footer>
 
-© 2026 Ma Belle Artz
+<p>
+© 2026 
+<span>
+Ma Belle Artz
+</span>
+</p>
 
 </footer>
 
@@ -406,4 +889,4 @@ Instagram:
 
 </body>
 
-</html>
+</html>    
