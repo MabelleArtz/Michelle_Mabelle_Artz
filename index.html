@@ -1,306 +1,216 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Basic Page Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Belle Artz | Digital Artist & Storyteller</title>
 
-<title>Ma Belle Artz | Jeanu-Michelle</title>
+    <meta name="description"
+        content="The official portfolio of Ma Belle Artz. Explore original digital artwork, collections, characters, and visual storytelling.">
 
-<style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-/* ---------- GLOBAL ---------- */
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-body{
-font-family: Georgia, 'Times New Roman', serif;
-margin:0;
-background:#0f0f10;
-color:#eaeaea;
-line-height:1.6;
-}
-
-section{
-max-width:1000px;
-margin:auto;
-padding:60px 20px;
-}
-
-h2{
-font-weight:normal;
-margin-bottom:25px;
-}
-
-p{
-margin:12px 0;
-}
-
-/* ---------- HEADER ---------- */
-
-header{
-text-align:center;
-padding:80px 20px;
-background:#151517;
-}
-
-header h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-header p{
-color:#d6b3ff;
-font-size:18px;
-}
-
-/* ---------- HERO IMAGE ---------- */
-
-#hero{
-display:flex;
-justify-content:center;
-padding:60px 20px;
-background:#151517;
-}
-
-#hero img{
-width:100%;
-max-width:450px;
-border-radius:10px;
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* ---------- WORK SECTIONS ---------- */
-
-.work{
-background:#18181b;
-border-radius:10px;
-padding:25px;
-margin-top:30px;
-}
-
-.work-gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:15px;
-margin-top:15px;
-}
-
-.work-gallery img{
-width:100%;
-border-radius:6px;
-transition:transform .3s ease;
-}
-
-.work-gallery img:hover{
-transform:scale(1.05);
-}
-
-/* ---------- PORTFOLIO GRID ---------- */
-
-#portfolio{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-#portfolio img{
-width:100%;
-border-radius:8px;
-transition:transform .3s ease;
-}
-
-#portfolio img:hover{
-transform:scale(1.05);
-}
-
-/* ---------- PERSONAL PHOTOS ---------- */
-
-#personal{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-}
-
-#personal img{
-width:150px;
-height:150px;
-object-fit:cover;
-border-radius:50%;
-}
-
-/* ---------- LOGOS ---------- */
-
-#logos{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:30px;
-}
-
-#logos img{
-height:70px;
-}
-
-/* ---------- FOOTER ---------- */
-
-footer{
-background:#151517;
-padding:30px;
-text-align:center;
-margin-top:50px;
-}
-
-a{
-color:#d6b3ff;
-text-decoration:none;
-}
-
-</style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Ma Belle Artz</h1>
-<p>Jeanu-Michelle | Artist Portfolio</p>
-</header>
+    <!-- ========================= -->
+    <!-- Navigation -->
+    <!-- ========================= -->
 
-<section id="hero">
-<img src="Art/logo/mabelle2.png" alt="Ma Belle Artz Logo">
-</section>
+    <header>
 
-<section>
+        <nav class="navbar">
 
-<h2>Who I Am</h2>
+            <div class="logo">
+                <a href="index.html">MA BELLE ARTZ</a>
+            </div>
 
-<p>Art has become a part of my everyday life. It is difficult to go about my day without seeing wonder around me.</p>
+            <ul class="nav-links">
 
-<p>I have been creating art for the better part of ten years.</p>
+                <li><a href="index.html">Home</a></li>
 
-<p>I do not limit myself to one medium or genre. I create to explore the endless possibilities of what a piece of art can become.</p>
+                <li><a href="collections.html">Collections</a></li>
 
-<img src="Art/me/me2.jpeg" style="max-width:300px;border-radius:10px;margin-top:20px;" alt="Artist photo">
+                <li><a href="about.html">About</a></li>
 
-</section>
+                <li><a href="contact.html">Contact</a></li>
 
-<section>
+            </ul>
 
-<h2>My Background</h2>
+        </nav>
 
-<p>I am a South African artist based in Hermanus. My work often explores the quiet tension between vulnerability and strength.</p>
+    </header>
 
-<p>I work primarily with traditional mediums, creating pieces that linger in emotional spaces. Femininity, perception, and inner conflict frequently weave through my work.</p>
 
-<p>Rather than strict realism, I am drawn to atmosphere and mood. I often explore the idea of intentional imperfection — a personal journey away from perfection and toward growth.</p>
+    <!-- ========================= -->
+    <!-- Hero -->
+    <!-- ========================= -->
 
-</section>
+    <section class="hero">
 
-<section>
+        <div class="hero-content">
 
-<h2>Selected Works</h2>
+            <h1>MA BELLE ARTZ</h1>
 
-<div class="work">
+            <p>
+                Original Digital Artist
+                <br>
+                Storytelling Through Art
+            </p>
 
-<h3>Story of Her</h3>
+            <a href="collections.html" class="hero-button">
+                Explore Collections
+            </a>
 
-<p>This series explores feminine presence and autonomy. The woman exists fully within her own power — not needing a man, yet choosing to welcome him.</p>
+        </div>
 
-<p>In the final piece he approaches her, looking upward in awe. The colour contrast against earlier monochrome works reflects his passion and desire.</p>
+    </section>
 
-<div class="work-gallery">
 
-<img src="Art/art_pieces/part1.jpeg" alt="Part 1">
-<img src="Art/art_pieces/part2.jpeg" alt="Part 2">
-<img src="Art/art_pieces/part3.jpeg" alt="Part 3">
-<img src="Art/art_pieces/final.jpeg" alt="Final Piece">
-<img src="Art/art_pieces/his_pov.jpeg" alt="His POV">
+    <!-- ========================= -->
+    <!-- About Preview -->
+    <!-- ========================= -->
 
-</div>
+    <section class="about-preview">
 
-</div>
+        <div class="container">
 
-<div class="work">
+            <h2>About</h2>
 
-<h3>Animal Cruelty Series</h3>
+            <p>
+                Welcome to Ma Belle Artz, where imagination, emotion and visual
+                storytelling meet.
 
-<p>This series depicts sea animals rendered in graphite and intentionally left colourless, symbolising their fading presence as endangered creatures.</p>
+                Every collection is created with purpose—whether exploring original
+                characters, meaningful themes, or moments captured through digital
+                illustration.
 
-<p>Red elements represent each life lost at the hands of humanity.</p>
+                This portfolio is an invitation to step inside each world, one
+                collection at a time.
+            </p>
 
-<div class="work-gallery">
+            <a href="about.html" class="text-link">
+                Learn More →
+            </a>
 
-<img src="Art/art_pieces/octopus_vctim.png">
-<img src="Art/art_pieces/shell_schocked.png">
-<img src="Art/art_pieces/whales_wrath.png">
-<img src="Art/art_pieces/dolphins_despair.png">
+        </div>
 
-</div>
+    </section>
 
-</div>
 
-<div class="work">
+    <!-- ========================= -->
+    <!-- Collections Preview -->
+    <!-- ========================= -->
 
-<h3>Beauty in Death – Mixed Media</h3>
+    <section class="collections-preview">
 
-<p>Created at the end of my high school years during a period of experimentation and personal loss.</p>
+        <div class="container">
 
-<p>Sharp glass fragments symbolise the harsh reality of grief, while flowers represent the fragile fantasy of holding on to what we have lost.</p>
+            <h2>Collections</h2>
 
-<div class="work-gallery">
+            <p>
+                Explore each collection individually.
+            </p>
 
-<img src="Art/art_pieces/beauty_in_death.png">
+            <div class="collection-list">
 
-</div>
+                <a href="collections/character-series.html" class="collection-item">
 
-</div>
+                    <h3>Character Series</h3>
 
-</section>
+                    <span>→</span>
 
-<section>
+                </a>
 
-<h2>Art & Creations</h2>
+                <a href="collections/animal-cruelty.html" class="collection-item">
 
-<div id="portfolio">
+                    <h3>Animal Cruelty</h3>
 
-<img src="Art/art_pieces/breaking_reality_2.png">
-<img src="Art/art_pieces/lion_gaze.png">
+                    <span>→</span>
 
-</div>
+                </a>
 
-</section>
+                <a href="collections/story-of-her.html" class="collection-item">
 
-<section>
+                    <h3>Story of Her</h3>
 
-<h2>What I Do</h2>
+                    <span>→</span>
 
-<p>My work is exploratory in nature. Each piece evolves through emotion, instinct, and atmosphere.</p>
+                </a>
 
-<p>The medium shifts depending on the mood of the work, allowing the piece itself to guide the process and the form it ultimately takes.</p>
+                <a href="collections/sketch-book.html" class="collection-item">
 
-</section>
+                    <h3>Sketch Book</h3>
 
-<section>
+                    <span>→</span>
 
-<h2>Contact</h2>
+                </a>
 
-<p>Email: <a href="mailto:mabelle03reve@gmail.com">mabelle03reve@gmail.com</a></p>
+                <a href="collections/stand-alones.html" class="collection-item">
 
-<p>Phone: +27 62 300 3812</p>
+                    <h3>Stand Alones</h3>
 
-<p>Instagram: <a href="https://instagram.com/michelle_mabelle_artz">@michelle_mabelle_artz</a></p>
+                    <span>→</span>
 
-<p>The artwork shown here represents a portion of my collection. For more pieces please visit my social media.</p>
+                </a>
 
-</section>
+            </div>
 
-<footer>
+        </div>
 
-<p>© 2026 Ma Belle Artz</p>
+    </section>
 
-</footer>
+
+    <!-- ========================= -->
+    <!-- Contact Preview -->
+    <!-- ========================= -->
+
+    <section class="contact-preview">
+
+        <div class="container">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+                Whether you're interested in commissions, collaborations, or simply
+                wish to follow my creative journey, I'd love to hear from you.
+            </p>
+
+            <a href="contact.html" class="hero-button">
+                Contact Me
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Ma Belle Artz
+
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
-</html>
-```
 
+</html>
