@@ -2,891 +2,215 @@
 <html lang="en">
 
 <head>
+    <!-- Basic Page Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Belle Artz | Digital Artist & Storyteller</title>
 
-<title>Ma Belle Artz | Contemporary Artist</title>
+    <meta name="description"
+        content="The official portfolio of Ma Belle Artz. Explore original digital artwork, collections, characters, and visual storytelling.">
 
-<meta name="description" content="Ma Belle Artz - Contemporary artwork exploring emotion, femininity, vulnerability and transformation.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-
-<style>
-
-
-:root {
-
---black:#0b0b0c;
---ivory:#f8f5ef;
---gold:#c6a15b;
---marble:#e8e4dc;
---grey:#555;
-
-}
-
-
-* {
-
-box-sizing:border-box;
-scroll-behavior:smooth;
-
-}
-
-
-
-body {
-
-margin:0;
-
-background:
-
-linear-gradient(
-135deg,
-#ffffff 0%,
-#e8e4dc 40%,
-#ffffff 70%
-);
-
-color:var(--black);
-
-font-family:'Montserrat', sans-serif;
-
-}
-
-
-h1,h2,h3 {
-
-font-family:'Cormorant Garamond', serif;
-
-}
-
-
-p {
-
-line-height:1.8;
-
-}
-
-
-a {
-
-text-decoration:none;
-
-color:inherit;
-
-}
-
-
-/* NAVIGATION */
-
-
-nav {
-
-position:sticky;
-
-top:0;
-
-z-index:1000;
-
-background:
-
-rgba(255,255,255,.85);
-
-backdrop-filter:blur(10px);
-
-border-bottom:1px solid rgba(198,161,91,.4);
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px 40px;
-
-}
-
-
-
-.logo {
-
-font-family:'Cormorant Garamond';
-
-font-size:2rem;
-
-letter-spacing:.15em;
-
-}
-
-
-
-nav ul {
-
-display:flex;
-
-gap:30px;
-
-list-style:none;
-
-margin:0;
-
-}
-
-
-
-nav a:hover {
-
-color:var(--gold);
-
-}
-
-
-
-/* HERO */
-
-
-.hero {
-
-min-height:90vh;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:50px 20px;
-
-}
-
-
-
-.hero h1 {
-
-font-size:clamp(4rem,8vw,7rem);
-
-margin:0;
-
-letter-spacing:.12em;
-
-}
-
-
-
-.hero p {
-
-font-size:1.3rem;
-
-color:#555;
-
-}
-
-
-
-.hero img {
-
-width:min(450px,80%);
-
-margin-top:40px;
-
-filter:
-
-drop-shadow(0 30px 40px rgba(0,0,0,.25));
-
-}
-
-
-
-/* GENERAL */
-
-
-section {
-
-max-width:1200px;
-
-margin:auto;
-
-padding:80px 30px;
-
-}
-
-
-
-.section-title {
-
-font-size:3rem;
-
-text-align:center;
-
-margin-bottom:50px;
-
-}
-
-
-
-.gold-line {
-
-width:80px;
-
-height:2px;
-
-background:var(--gold);
-
-margin:20px auto;
-
-}
-
-.gold-line {
-
-width:80px;
-
-height:2px;
-
-background:var(--gold);
-
-margin:20px auto;
-
-}
-
-</style>
-
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 
 <body>
 
+    <!-- ========================= -->
+    <!-- Navigation -->
+    <!-- ========================= -->
 
-<nav>
+    <header>
 
-<div class="logo">
-Ma Belle Artz
-</div>
+        <nav class="navbar">
 
+            <div class="logo">
+                <a href="index.html">MA BELLE ARTZ</a>
+            </div>
 
-<ul>
+            <ul class="nav-links">
 
-<li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
-<li><a href="#about">About</a></li>
+                <li><a href="collections.html">Collections</a></li>
 
-<li><a href="#gallery">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
 
-<li><a href="#commissions">Commissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
-<li><a href="#contact">Contact</a></li>
+            </ul>
 
-</ul>
+        </nav>
 
-</nav>
+    </header>
 
 
+    <!-- ========================= -->
+    <!-- Hero -->
+    <!-- ========================= -->
 
+    <section class="hero">
 
+        <div class="hero-content">
 
-<section class="hero" id="home">
+            <h1>MA BELLE ARTZ</h1>
 
+            <p>
+                Original Digital Artist
+                <br>
+                Storytelling Through Art
+            </p>
 
-<h1>
-Ma Belle Artz
-</h1>
+            <a href="collections.html" class="hero-button">
+                Explore Collections
+            </a>
 
+        </div>
 
-<div class="gold-line"></div>
+    </section>
 
 
-<p>
-Where emotion becomes art.
-</p>
+    <!-- ========================= -->
+    <!-- About Preview -->
+    <!-- ========================= -->
 
+    <section class="about-preview">
 
-<img 
-src="Art/logo/mabelle2.png"
-alt="Ma Belle Artz Logo">
+        <div class="container">
 
+            <h2>About</h2>
 
-</section>
+            <p>
+                Welcome to Ma Belle Artz, where imagination, emotion and visual
+                storytelling meet.
 
+                Every collection is created with purpose—whether exploring original
+                characters, meaningful themes, or moments captured through digital
+                illustration.
 
+                This portfolio is an invitation to step inside each world, one
+                collection at a time.
+            </p>
 
+            <a href="about.html" class="text-link">
+                Learn More →
+            </a>
 
+        </div>
 
+    </section>
 
-<section id="about">
 
+    <!-- ========================= -->
+    <!-- Collections Preview -->
+    <!-- ========================= -->
 
-<h2 class="section-title">
-The Artist Behind The Work
-</h2>
+    <section class="collections-preview">
 
+        <div class="container">
 
-<div class="gold-line"></div>
+            <h2>Collections</h2>
 
+            <p>
+                Explore each collection individually.
+            </p>
 
+            <div class="collection-list">
 
-<p>
-Exploring the fragile balance between vulnerability and strength.
-Each piece becomes a conversation between emotion, identity, perception and transformation.
-</p>
+                <a href="collections/character-series.html" class="collection-item">
 
+                    <h3>Character Series</h3>
 
-<p>
-Through different mediums and artistic styles, the work seeks to capture moments that exist between reality and imagination — where imperfection becomes part of the beauty.
-</p>
+                    <span>→</span>
 
+                </a>
 
-</section>
+                <a href="collections/animal-cruelty.html" class="collection-item">
 
+                    <h3>Animal Cruelty</h3>
 
-<section id="gallery">
+                    <span>→</span>
 
+                </a>
 
-<h2 class="section-title">
-Artwork Collection
-</h2>
+                <a href="collections/story-of-her.html" class="collection-item">
 
-<div class="gold-line"></div>
+                    <h3>Story of Her</h3>
 
-<div class="gallery">
+                    <span>→</span>
 
+                </a>
 
-<div class="art-card">
+                <a href="collections/sketch-book.html" class="collection-item">
 
-<img src="Art/art_pieces/beauty_in_death.png">
+                    <h3>Sketch Book</h3>
 
+                    <span>→</span>
 
-<div class="art-info">
+                </a>
 
+                <a href="collections/stand-alones.html" class="collection-item">
 
-<h3>
-Beauty In Death
-</h3>
+                    <h3>Stand Alones</h3>
 
+                    <span>→</span>
 
-<p>
-Mixed Media
-</p>
+                </a>
 
+            </div>
 
-<p>
-A reflection on grief, memory and the delicate beauty found within loss.
-</p>
+        </div>
 
+    </section>
 
-<details>
 
-<summary>
-View Story
-</summary>
+    <!-- ========================= -->
+    <!-- Contact Preview -->
+    <!-- ========================= -->
 
+    <section class="contact-preview">
 
-<p>
-Created during a period of personal reflection, this piece explores the contrast between pain and beauty. Glass represents the sharp edges of grief, while flowers represent the fragile moments we try to preserve.
-</p>
+        <div class="container">
 
+            <h2>Let's Connect</h2>
 
-</details>
+            <p>
+                Whether you're interested in commissions, collaborations, or simply
+                wish to follow my creative journey, I'd love to hear from you.
+            </p>
 
+            <a href="contact.html" class="hero-button">
+                Contact Me
+            </a>
 
-</div>
+        </div>
 
+    </section>
 
-</div>
 
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
 
+    <footer>
 
+        <p>
 
+            © 2026 Ma Belle Artz
 
+        </p>
 
+    </footer>
 
-
-<div class="art-card">
-
-
-<img src="Art/art_pieces/breaking_reality_2.png">
-
-
-<div class="art-info">
-
-
-<h3>
-Breaking Reality
-</h3>
-
-
-<p>
-Digital Artwork
-</p>
-
-
-<p>
-Exploring perception, identity and the spaces between what we see and what we feel.
-</p>
-
-
-<details>
-
-<summary>
-View Story
-</summary>
-
-
-<p>
-A visual exploration of breaking away from expectations and embracing transformation.
-</p>
-
-
-</details>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="art-card">
-
-
-<img src="Art/art_pieces/lion_gaze.png">
-
-
-<div class="art-info">
-
-
-<h3>
-Lion's Gaze
-</h3>
-
-
-<p>
-Traditional Artwork
-</p>
-
-
-<p>
-A study of strength, presence and quiet observation.
-</p>
-
-
-<details>
-
-<summary>
-View Story
-</summary>
-
-
-<p>
-This piece represents the power of stillness — the strength that exists without needing to roar.
-</p>
-
-
-</details>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-</section>
-
-<style>
-
-
-/* GALLERY */
-
-
-.gallery {
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(300px,1fr));
-
-gap:40px;
-
-}
-
-
-
-.art-card {
-
-background:white;
-
-border-radius:20px;
-
-overflow:hidden;
-
-box-shadow:
-
-0 20px 50px rgba(0,0,0,.15);
-
-transition:.4s ease;
-
-border:1px solid rgba(198,161,91,.3);
-
-}
-
-
-
-.art-card:hover {
-
-transform:translateY(-10px);
-
-box-shadow:
-
-0 30px 70px rgba(0,0,0,.25);
-
-}
-
-
-
-.art-card img {
-
-width:100%;
-
-height:420px;
-
-object-fit:cover;
-
-}
-
-
-
-.art-info {
-
-padding:30px;
-
-}
-
-
-
-.art-info h3 {
-
-font-size:2rem;
-
-margin-top:0;
-
-}
-
-
-
-.art-info p:first-of-type {
-
-color:var(--gold);
-
-font-weight:500;
-
-}
-
-
-
-details {
-
-margin-top:20px;
-
-border-top:1px solid #ddd;
-
-padding-top:15px;
-
-}
-
-
-
-summary {
-
-cursor:pointer;
-
-color:var(--gold);
-
-font-weight:600;
-
-}
-
-
-
-
-
-/* COMMISSIONS */
-
-
-.commission-box {
-
-background:
-
-linear-gradient(
-
-135deg,
-
-#ffffff,
-
-#e8e4dc
-
-);
-
-
-padding:50px;
-
-border-radius:25px;
-
-text-align:center;
-
-box-shadow:
-
-0 20px 50px rgba(0,0,0,.12);
-
-}
-
-
-
-.button {
-
-display:inline-block;
-
-margin-top:25px;
-
-padding:15px 40px;
-
-background:var(--gold);
-
-color:white;
-
-border-radius:50px;
-
-transition:.3s;
-
-}
-
-
-
-.button:hover {
-
-background:#a9833d;
-
-}
-
-
-
-
-
-/* CONTACT */
-
-
-.contact {
-
-text-align:center;
-
-}
-
-
-
-
-
-/* FOOTER */
-
-
-footer {
-
-background:#0b0b0c;
-
-color:white;
-
-text-align:center;
-
-padding:40px;
-
-}
-
-
-
-footer span {
-
-color:var(--gold);
-
-}
-
-
-
-
-/* MOBILE */
-
-
-@media(max-width:800px){
-
-
-nav {
-
-flex-direction:column;
-
-gap:15px;
-
-}
-
-
-
-nav ul {
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-padding:0;
-
-}
-
-
-
-.hero h1 {
-
-font-size:3rem;
-
-}
-
-
-
-section {
-
-padding:50px 20px;
-
-}
-
-
-
-.art-card img {
-
-height:300px;
-
-}
-
-
-}
-
-
-
-</style>
-
-
-
-
-
-<section id="commissions">
-
-
-<h2 class="section-title">
-Commissions
-</h2>
-
-
-<div class="gold-line"></div>
-
-
-
-<div class="commission-box">
-
-
-<p>
-Interested in a custom piece created specifically for you?
-</p>
-
-
-<p>
-Ma Belle Artz offers personalised digital artwork commissions, character artwork and creative collaborations.
-</p>
-
-
-
-<a 
-class="button"
-href="mailto:Mabelle_Artz@outlook.com">
-
-Request A Commission
-
-</a>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section id="contact" class="contact">
-
-
-<h2 class="section-title">
-Contact
-</h2>
-
-
-<div class="gold-line"></div>
-
-
-<p>
-Email:
-<a href="mailto:Mabelle_Artz@outlook.com">
-Mabelle_Artz@outlook.com
-</a>
-</p>
-
-
-<p>
-
-Instagram:
-
-<a href="https://instagram.com/michelle_mabelle_artz">
-
-@michelle_mabelle_artz
-
-</a>
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-<footer>
-
-<p>
-© 2026 
-<span>
-Ma Belle Artz
-</span>
-</p>
-
-</footer>
-
-
+    <script src="js/script.js"></script>
 
 </body>
 
-</html>    
+</html>
